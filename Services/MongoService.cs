@@ -14,7 +14,7 @@ namespace ProjFinanceiro.Services
         IEnumerable<ClienteDto> lstCliente;
         public async Task<IEnumerable<ClienteDto>> GetClienteAsync()
         {
-            httpClient.BaseAddress = new Uri("https://localhost:5003/");
+            httpClient.BaseAddress = new Uri("http://localhost:5003/");
 
             httpClient.DefaultRequestHeaders.Accept.Clear();
             httpClient.DefaultRequestHeaders.Accept.Add(

@@ -28,7 +28,9 @@
   Gerar:
 
   dotnet aspnet-codegenerator controller -name DogController -async -api -m Dog -dc PetContext -outDir Controllers
+  
   dotnet aspnet-codegenerator controller -name BreedController -async -api -m Breed -dc PetContext -outDir Controllers
+  
 
 * Criar tabelas:
 

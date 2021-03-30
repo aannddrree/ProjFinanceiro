@@ -17,20 +17,29 @@
   Instação:
   
   dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+  
   dotnet add package Microsoft.EntityFrameworkCore.Design
+  
   dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  
   dotnet tool install -g dotnet-aspnet-codegenerator
+  
 
   Gerar:
 
   dotnet aspnet-codegenerator controller -name DogController -async -api -m Dog -dc PetContext -outDir Controllers
+  
   dotnet aspnet-codegenerator controller -name BreedController -async -api -m Breed -dc PetContext -outDir Controllers
+  
 
 * Criar tabelas:
 
-  dotnet tool install --global dotnet-ef
+  dotnet tool install --global dotnet-ef 
+  
   dotnet ef migrations add v1
+  
   dotnet ef database update
+  
 
 * Implementação para chamada do serviço (MongoService):
 
